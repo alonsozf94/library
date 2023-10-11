@@ -1,0 +1,102 @@
+/* Presets */
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 5px 10px 5px 5px;
+}
+
+/* Common */
+.blue-button {
+  max-width: 150px;
+  padding: 8px 20px;
+  align-self: center;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Form */
+.form-background.on {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.form-background.off {
+  display: none;
+}
+#bookForm {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+#bookForm input[type="text"] {
+  padding: 5px 5px 5px 15px;
+  border: 1px solid #979797;
+  border-radius: 15px;
+}
+#bookForm .read-input {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#bookForm #close-form {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent url("close.svg") no-repeat right top;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Library Table */
+th {
+  min-width: 100px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #0ea5e9;
+}
+td {
+  text-align: center;
+}
+.delete-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent url("delete-circle-outline.svg") no-repeat right top;
+  background-size: cover;
+  cursor: pointer;
+}
+.read-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent url("eye-outline.svg") no-repeat right top;
+  background-size: cover;
+  cursor: pointer;
+}
+.delete-button:hover, .read-button:hover, .blue-button:hover, #close-form:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-background off">
+        <form id="bookForm">
+          <button id="close-form"></button>
+          <input name="book-name" type="text" placeholder="Name" />
+          <input name="book-author" type="text" placeholder="Author" />
+          <input name="book-pages" type="text" placeholder="Pages" />
+          <div class="read-input">
+            <p>Read?</p>
+            <input name="book-read" type="checkbox" />
+          </div>
+          <button id="submit-button" class="blue-button">Submit</button>
+        </form>
+      </div>
+      <h1>My Library</h1>
+      <div id="my-library">
+        <table>
+          <tr class="table-head">
+            <th>Name</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read?</th>
+            <th>Delete Book</th>
+            <th>Read Book</th>
+          </tr>
+        </table>
+      </div>
+      <button id="add-book" class="blue-button">Add Book</button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
